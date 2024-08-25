@@ -1,6 +1,5 @@
-"use strict";
 
-// works img スクロールアニメーション///////////////////////////// 
+  // / works img スクロールアニメーション///////////////////////////// 
 
 
 const options = {
@@ -30,7 +29,7 @@ const captionTexts = document.querySelectorAll('.works-text');
 const caption = document.querySelectorAll('.caption');
 const duration = 400;
 
-if(window.innerWidth >= 1024) {
+if(window.innerWidth >= 768) {
   captionTexts.forEach((Text, index) => {
     Text.addEventListener('mouseover', () => {
         caption.forEach((cap, i) => { 
@@ -53,7 +52,7 @@ if(window.innerWidth >= 1024) {
        });      
     });
   });
-} else if(window.innerWidth < 1024) {
+} else if(window.innerWidth < 768) {
   captionTexts.forEach((Text, index) => {
     Text.addEventListener('click', () => {
         caption.forEach((cap, i) => { 

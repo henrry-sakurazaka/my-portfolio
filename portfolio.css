@@ -966,6 +966,41 @@ figcaption {
     }
     
 }
+
+.inview .works-container .works-text figcaption .code-detail {
+    text-align: center;
+    font-size: 24px;
+    letter-spacing: 0.4;
+}
+.inview .works-container .works-text figcaption .code-detail:hover {
+    color: rgb(209, 209, 11);
+    text-decoration: underline;
+    font-size: 24px;
+    letter-spacing: 4px;
+}
+
+@media screen and (max-width: 430px) {
+    .inview .works-container .works-text figcaption .code-detail {
+        font-size: 0.8em;
+        letter-spacing: 0.2;
+        line-height: 0.8rem;
+        -webkit-text-stroke: none;
+    }
+
+    
+}
+@media screen and (max-width: 376px) {
+    .inview .works-container .works-text figcaption .code-detail {
+        font-size: 0.8em;
+        letter-spacing: 0.2;
+        line-height: 0.8rem;
+    }
+
+    
+}
+
+
+
 .inview .works-container .works-text figcaption span {
     font-weight: 300;
     letter-spacing: 0.4;
@@ -1045,14 +1080,10 @@ figcaption {
     }   
 }
 
-
-
-
 .used-language {
     line-height: 64px;
     text-align: justify;
 }
-
 
 
 
