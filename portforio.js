@@ -1,17 +1,6 @@
+"use strict";
 
-
-// プログレスバー//////////////////////////////////////////////////
-
-window.addEventListener("scroll", () => {
-    var h1=window.pageYOffset;
-    var h2=window.innerHeight;
-    var h3=document.documentElement.offsetHeight;
-    const prg=document.querySelector('progress');
-    var v=parseInt(h1/(h3-h2)*100);
-    prg.value=v;
-  });
-
-  // / works img スクロールアニメーション///////////////////////////// 
+// works img スクロールアニメーション///////////////////////////// 
 
 
 const options = {
@@ -41,6 +30,30 @@ const captionTexts = document.querySelectorAll('.works-text');
 const caption = document.querySelectorAll('.caption');
 const duration = 400;
 
+if(window.innerWidth >= 1024) {
+  captionTexts.forEach((Text, index) => {
+    Text.addEventListener('mouseover', () => {
+        caption.forEach((cap, i) => { 
+          if(index == i) {
+            setTimeout(() => {
+              cap.classList.add('active');
+            }, duration); 
+          } 
+       });      
+    });
+  });
+  captionTexts.forEach((Text, index) => {
+    Text.addEventListener('mouseout', () => {
+        caption.forEach((cap, i) => { 
+          if(index == i) {
+            setTimeout(() => {
+              cap.classList.remove('active');
+            }, duration); 
+          } 
+       });      
+    });
+  });
+} else if(window.innerWidth < 1024) {
   captionTexts.forEach((Text, index) => {
     Text.addEventListener('click', () => {
         caption.forEach((cap, i) => { 
@@ -48,11 +61,13 @@ const duration = 400;
             setTimeout(() => {
               cap.classList.toggle('active');
             }, duration); 
-          }  
-       });      
-    }); 
+          } 
+      });      
+    });
   });
-
+}
+  
+ 
 // navigation animation ////////////////////////////////////////////
 
 document.addEventListener("mousemove", function() {
@@ -108,7 +123,7 @@ function switchAnimation() {
   }
 
   if (window.innerWidth > 1700) {
-    console.log('yes')
+  
     currentAnimation = 'animLeft6';
     element.style.animationName = currentAnimation;
   }

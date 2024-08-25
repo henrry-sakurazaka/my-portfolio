@@ -3,6 +3,7 @@
 body {
     margin: 0;
     padding: 0;
+    
 }
 
 .container {
@@ -30,7 +31,18 @@ body {
     transition: all 6s;
     
 }
-
+@media screen and (max-width: 1600px) {
+    .backgroundAvocad {
+        left: 20%;
+    }
+    
+}
+@media screen and (max-width: 1367px) {
+    .backgroundAvocad {
+        left: 20%;
+    }
+    
+}
 
 
 @media screen and (max-width: 1970px) {
@@ -379,6 +391,9 @@ section {
     font-size: 4.678vw;
     /* font-size: 5.8125vw; */
     margin-top: 8px;
+    font-family: "Prata", serif;
+    font-weight: 400;
+    font-style: normal; 
     /* font-family: 'Castoro Titling', cursive; */
     -webkit-text-stroke: 1px;
     /* background-clip: text;

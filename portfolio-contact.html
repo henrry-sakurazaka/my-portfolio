@@ -16,8 +16,11 @@
     <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Castoro+Titling&family=Monoton&family=Montserrat+Alternates:wght@500&family=Questrial&display=swap" rel="stylesheet">
     <!-- <link rel="stylesheet" href="./bgm-app/build/static/css/7501610278d4804f.css">
     -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Prata&display=swap" rel="stylesheet">
     
-    <title>Document</title>
+    <title>OffSetCodeCraft/portfolio</title>
 </head>
 
 
@@ -115,11 +118,11 @@
                 <form action="./contact.php" method="post">
                     <dl>
                         <dt><label for="name">NAME</label></dt>
-                        <dd><input type="text" id="name" name="your-name"></dd>
+                        <dd><input type="text" id="name" name="your-name" required ></dd>
                         <dt><label for="email">E-MAIL</label></dt>
-                        <dd><input type="email" id="email" name="your-email"></dd>
+                        <dd><input type="email" id="email" name="your-email"pattern="[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}" title="正しい形式のメールアドレスを入力してください"></dd>
                         <dt><label for="message">MESSAGE</label></dt>
-                        <dd><textarea id="message" name="your-message"></textarea></dd>
+                        <dd><textarea id="message" name="your-message" required ></textarea></dd>
                         <dd><div class="button"><button type="submit" id="btn">SUBMIT</button></div></dd>
                     </dl>
                     
@@ -154,15 +157,17 @@
 
     
     
-    <script src="./jquery-3.6.1min.js"></script>
+    <script src="./jquery-3.6.1min.js" defer></script>
     <!-- <script src="https://unpkg.com/@barba/core"></script>
     <script src="https://cdn.jsdelivr.net/npm/@barba/core"></script>  -->
     <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/howler/2.2.3/howler.min.js"></script> -->
-    <script src="bgm.js"></script>
-    <script src="MS.js"></script>
+    <script src="bgm.js" defer></script>
+    <script src="MS.js" defer></script>
     <!-- <script src="audio.js"></script> -->
-    <script src="change-page.js"></script>
-    <script src="contact.js"></script>
+    <script src="change-page.js" defer></script>
+    <script src="progress-bar.js" defer></script>
+    <script src="nav.js" defer></script>
+    <script src="contact.js" defer></script>
 
     
     

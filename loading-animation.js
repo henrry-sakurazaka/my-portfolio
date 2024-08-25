@@ -1,6 +1,6 @@
 // loading animation ///////////////////////////////////////////////
 
-window.addEventListener('DOMContentLoaded', () => {
+// window.addEventListener('DOMContentLoaded', () => {});
 
   $('.line').animate({'width': '100%'}, 1500, function(){
     $(this).css({'right': '0'});
@@ -24,7 +24,7 @@ window.addEventListener('DOMContentLoaded', () => {
     function updateDisplay() {
 
       const elapsed = Date.now() - start;
-      timeDisplay = Math.floor(elapsed /10);
+      timeDisplay = Math.floor(elapsed/10);
       countdown.textContent = timeDisplay < 10 ? "0"+ timeDisplay : timeDisplay ; 
       
       
@@ -44,11 +44,10 @@ window.addEventListener('DOMContentLoaded', () => {
     timeoutID = setTimeout(updateDisplay, 10); 
         
     updateDisplay();
-
   }
 
   time();
-});    
+    
 
     
 

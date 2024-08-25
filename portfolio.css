@@ -11,6 +11,7 @@ body {
     margin: 0;
     padding: 0;  
     /* background-color: rgba(240, 243, 207, 0.997);  */
+    
 }
 
 .container {
@@ -126,6 +127,9 @@ body {
 
 .count-down {
     font-size: 17vw;
+    font-family: "Prata", serif;
+    font-weight: 400;
+    font-style: normal; 
     color: #fff;
     position: fixed;
     top: 50%;
@@ -453,7 +457,10 @@ main .big-title2 {
 
 .catch {
     font-size: 6.8125vw;
-    font-weight: 300;
+    font-weight: 300; 
+    font-family: "Prata", serif;
+    font-weight: 400;
+    font-style: normal;    
     background-clip: text;
     background-image: url(./images-mountan/2.jpg);
     background-position: center;
@@ -618,6 +625,38 @@ section {
 .works {
     position: relative;
 }
+@media screen and(max-width: 1900px) {
+    figcaption {
+        width: 720px;
+    }
+}
+
+@media screen and (max-width: 1600px) {
+    figcaption {
+        width: 480px;
+        
+    }
+}
+@media screen and (max-width: 1367px) {
+    figcaption {
+        width: 480px;
+        
+    }
+}
+
+@media screen and (max-width: 800px) {
+    figcaption {
+        width: 400px;
+        
+    }
+}
+@media screen and (max-width: 430px) {
+    figcaption {
+        width: 320px;
+        
+    }
+}
+
 
  .works-li {
     will-change: filter;
@@ -771,18 +810,48 @@ section {
 .works-container:hover {
     .works-text {
         transform: translate(-8px , -16px,);
+        
     }
+    .works-text-name {
+        color: black;
+        text-decoration: none;
+        font-weight: 300;
+        font-family: "Prata", serif;
+        font-weight: 400;
+        font-style: normal; 
+        font-size: 5.859375vw;
+        line-height: 5.859375vw;
+        transition: all 0.4s;
+        text-align: center;
+        mix-blend-mode: exclusion;
+    }
+     .works-container .works-text figcaption span {
+        color: black;
+        font-weight: 300;
+        letter-spacing: 0.4;
+        text-align: center;
+        display: block;
+        font-size: 2rem;
+        letter-spacing: 0.4rem;
+        line-height: 2rem;
+        mix-blend-mode: exclusion; 
+        -webkit-text-stroke: 1px black;  
+    }
+    
 }
 figcaption {
     visibility: visible;
 }
 
+
+
 .inview .works-text {
     will-change: mix-blend-mode;
     width: 45vw;
-    color: #4c4545;;
+    color: #4c4545;
+    /* color: #fff; */
     z-index: 10;
-    mix-blend-mode: lighten;
+    mix-blend-mode: exclusion;
     transition: all 0.4s;
     top: 120px;
     right: -560px;
@@ -792,6 +861,14 @@ figcaption {
 }
 
 
+
+@media screen and (min-width: 1367px) {
+    .inview .works-text {
+        top: 232px;
+        right: -600px;
+    }    
+    
+}
 @media screen and (max-width: 1366px) {
 
     .inview .works-text {
@@ -810,16 +887,21 @@ figcaption {
         }   
 }
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 1030px) {
+    .inview .works-text {
+        width: 720px;
+        left: 90%;
+        transform: translateX(-60%);
+       }
+}
+@media screen and (max-width: 820px) {
     
     .inview .works-text {
-        right: -112px;
-        top: 400px;
+        left: 50%;
+        transform: translateX(-50%);
         width: 320px;
         }   
 }
-
-
 
 
 @media screen and (max-width: 430px) {
@@ -853,13 +935,29 @@ figcaption {
  .inview .works-text-name {
     text-decoration: none;
     font-weight: 300;
+    font-family: "Prata", serif;
+    font-weight: 400;
+    font-style: normal; 
     font-size: 5.859375vw;
     line-height: 5.859375vw;
     transition: all 0.4s;
     text-align: center;
-    -webkit-text-stroke: 1px #fff;
+    -webkit-text-stroke: 1px #ccc;
     /* color:transparent; */
 }
+@media screen and (max-width: 1900px) {
+    .inview .works-text-name {
+        word-spacing: 24px;
+    }
+    
+}
+@media screen and (max-width: 1600px) {
+    .inview .works-text-name {
+        font-size: 4vw;
+        
+    }   
+}
+
 
 @media screen and (max-width: 430px) {
     .inview .works-text-name {
@@ -876,7 +974,8 @@ figcaption {
     font-size: 2rem;
     letter-spacing: 0.4rem;
     line-height: 2rem;
-    margin-top: 16px;
+    mix-blend-mode: exclusion;
+    -webkit-text-stroke: 1px #ccc;
     /* -webkit-text-stroke: 1px #fff; */   
 }
 
@@ -884,7 +983,8 @@ figcaption {
     .inview .works-container .works-text figcaption span {
         font-size: 1em;
         letter-spacing: 0.2;
-        line-height: 1.5rem;
+        line-height: 0.8rem;
+        -webkit-text-stroke: none;
     }
 
     
@@ -893,7 +993,7 @@ figcaption {
     .inview .works-container .works-text figcaption span {
         font-size: 1em;
         letter-spacing: 0.2;
-        line-height: 1.5rem;
+        line-height: 0.8rem;
     }
 
     
@@ -922,24 +1022,25 @@ figcaption {
 
 @media screen and (max-width: 430px) {
     .caption.active {
-        width: 300px;
-        height: 260px;
-        top: 24px;
-    }   
-}
-@media screen and (max-width: 390px) {
-    .caption.active {
-        width: 286px;
+        width: 400px;
         height: 240px;
         top: 24px;
         left: 24px;
     }   
 }
+@media screen and (max-width: 390px) {
+    .caption.active {
+        width: 380px;
+        height: 216px;
+        top: 8px;
+        left: 24px;
+    }   
+}
 @media screen and (max-width: 375px) {
     .caption.active {
-        width: 286px;
-        height: 240px;
-        top: 24px;
+        width: 370px;
+        height: 216px;
+        top: -32px;
         left: 40px;
     }   
 }

@@ -3,6 +3,7 @@
 body {
     margin: 0;
     padding: 0;
+    
 }
 
 .container {
@@ -384,6 +385,9 @@ header {
     background-clip: text;
     color: rgba(0, 0, 0, 0.24);
     /* mix-blend-mode: overlay;  */
+    font-family: "Prata", serif;
+    font-weight: 400;
+    font-style: normal; 
     background-image: url(./images-mountan/2.jpg);
     background-position: center;
     -webkit-background-clip: text;
@@ -597,14 +601,14 @@ section {
 }
 @media screen and (max-width: 768px) {
     section {
-        height: 2100px;
+        height: 2400px;
         margin-bottom: 96px;
         padding-right: 40px;
     }
 }
 @media screen and (max-width: 430px) {
     section {
-        height: 2900px;
+        height: 3060px;
         margin-bottom: 8px;
         margin-top: 0;
     }   
@@ -613,27 +617,27 @@ section {
 @media screen and (max-width: 414px) {
     section {
         padding-left: 40px;
-        height: 2528px;
+        height: 2720px;
         margin-top: 88px;
     }  
 }
 @media screen and (max-width: 390px) {
     section {
         padding-left: 42px;
-        height: 2700px;
+        height: 2780px;
     }  
 }
 
 @media screen and (max-width: 375px) {
     section {
-        height: 2780px;
+        height: 2880px;
         padding-left: 40px;
     }
 }
 
 @media screen and (max-width: 320px) {
     section {
-        height: 2700px;
+        height: 3000px;
     }
 }
 
@@ -1011,6 +1015,15 @@ dt {
     transition: 0.5s;
     /* -webkit-text-stroke: 1px #111;
     color: #fff;  */
+}
+@media screen and (max-width: 430px) {
+
+    .big-text:hover {
+    letter-spacing: 16px;
+    transition: 0.5s;
+    /* -webkit-text-stroke: 1px #111;
+    color: #fff;  */
+}
 }
    
 
