@@ -26,29 +26,41 @@ els.forEach((el) => io.observe(el));
 // click caption ///////////////////////////////////////////////////
 
 const captionTexts = document.querySelectorAll('.works-text');
+const captionTexts2 = document.querySelector('.works-text2');
 const caption = document.querySelectorAll('.caption');
+const caption2 = document.querySelector('.caption2');
 const duration = 400;
 
 if(window.innerWidth >= 768) {
   captionTexts.forEach((Text, index) => {
     Text.addEventListener('mouseover', () => {
         caption.forEach((cap, i) => { 
-          if(index == i) {
+          if(index == 0 && index == i) {
+            setTimeout(() => {
+              cap.classList.add('active2');
+            }, duration); 
+          } else if
+           (index == i) {
             setTimeout(() => {
               cap.classList.add('active');
-            }, duration); 
-          } 
+            }, duration);
+           }
        });      
     });
   });
   captionTexts.forEach((Text, index) => {
     Text.addEventListener('mouseout', () => {
         caption.forEach((cap, i) => { 
-          if(index == i) {
+          if(index == 0 && index == i) {
             setTimeout(() => {
-              cap.classList.remove('active');
+              cap.classList.remove('active2');
             }, duration); 
-          } 
+          } else if
+            (index == i) {
+              setTimeout(() => {
+                cap.classList.remove('active');
+              }, duration);
+            }
        });      
     });
   });
@@ -56,16 +68,39 @@ if(window.innerWidth >= 768) {
   captionTexts.forEach((Text, index) => {
     Text.addEventListener('click', () => {
         caption.forEach((cap, i) => { 
-          if(index == i) {
+          if(index == 0 && index == i) {
             setTimeout(() => {
-              cap.classList.toggle('active');
+              cap.classList.toggle('active2');
             }, duration); 
-          } 
+          } else if
+            (index == i) {
+              setTimeout(() => {
+                cap.classList.toggle('active');
+              }, duration);
+            }
       });      
     });
   });
 }
+if(window.innerWidth < 768) {
+  captionTexts.forEach((Text, index) => {
+    caption.forEach((cap, i) => {
+      if(index == 0 && index == i) {
+        cap.addEventListener('click', () => {
+            setTimeout(() => {
+              cap.classList.remove('active2');
+            }, duration);
+        })
+      }
+    })
+  })
+}
+
+
   
+
+
+
  
 // navigation animation ////////////////////////////////////////////
 
