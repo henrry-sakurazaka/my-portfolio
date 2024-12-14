@@ -1178,7 +1178,7 @@ figcaption2 {
 
 .caption.active2 {
     width: 480px;
-    height: 800px;
+    height: 816px;
     background-color: #fff;
     border: 1px solid;
     top: 64px;
@@ -1265,8 +1265,8 @@ figcaption2 {
 }
 
 @media screen and (max-width: 430px) {
-    .inview .works-container .works-text figcaption .architecture {
-        font-size: 0.5em;
+    .inview .works-container .works-text figcaption .architecture .architex {
+        font-size: 0.8em;
         letter-spacing: 0.2px;
         line-height: 0.8rem;
         -webkit-text-stroke: none;
@@ -1275,7 +1275,7 @@ figcaption2 {
     
 }
 @media screen and (max-width: 376px) {
-    .inview .works-container .works-text figcaption .architecture {
+    .inview .works-container .works-text figcaption .architecture .architex {
         font-size: 0.5em;
         letter-spacing: 0.2px;
         line-height: 0.8rem;
