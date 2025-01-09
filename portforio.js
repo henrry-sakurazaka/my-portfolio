@@ -25,9 +25,7 @@
   // click caption ///////////////////////////////////////////////////
   
   const captionTexts = document.querySelectorAll('.works-text');
-  const captionTexts2 = document.querySelector('.works-text2');
   const caption = document.querySelectorAll('.caption');
-  const caption2 = document.querySelector('.caption2');
   const duration = 400;
   
   if(window.innerWidth >= 768) {

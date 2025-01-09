@@ -1181,7 +1181,7 @@ figcaption2 {
     height: 816px;
     background-color: #fff;
     border: 1px solid;
-    top: 64px;
+    top: 24px;
     left: 16px;
     display: flex;
     flex-direction: column;
@@ -1193,8 +1193,6 @@ figcaption2 {
     transition: all 0.8s;  
     z-index: 999;
 }
-
-
 
 
 @media screen and (max-width: 430px) {
@@ -1228,6 +1226,25 @@ figcaption2 {
         top: -32px;
         left: 40px;
     }   
+}
+@media screen and (max-width: 1580px) {
+    .caption.active2 {
+        width: 480px;
+        height: 816px;
+        background-color: #fff;
+        border: 1px solid;
+        top: -88px;
+        left: 16px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        position: absolute;
+        z-index: 200;
+        padding-left: 40px;
+        padding-right: 40px;
+        transition: all 0.8s;  
+        z-index: 999;  
+    }
 }
 @media screen and (max-width: 430px) {
     .caption.active2 {
