@@ -11,7 +11,7 @@
     const typescriptGitHub = "https://github.com/henrry-sakurazaka/Hello-TypeScript";
     const megumiGitHub = "https://github.com/henrry-sakurazaka/Megumi-Completa-Official";
     const engineerPostGitHub = "https://github.com/henrry-sakurazaka/Engineer-Post";
-    const architectureChart = "./images/Blank diagram-9.png"
+    const architectureChart = "./images/Blank diagram10.png"
     $('body').removeClass('fo');
     $('.animation').addClass('active');
 
