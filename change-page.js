@@ -3,7 +3,7 @@
     const targetLink = "http://sakurazaka.s324.xrea.com/megumi-completa/megumi-completa3/HELLO5.html";
     const outLink = "https://soundcloud.com/a_s_up_2?utm_source=clipboard&utm_medium=text&utm_campaign=social_sharing";
     const github = "https://github.com/henrry-sakurazaka";
-    const reminder = "https://reminder3-65e84.web.app";
+    const reminder = "https://reminder5-27ef0.web.app";
     const mountain = "http://sakurazaka.s324.xrea.com/mountain-view/mountain.html";
     const engineerPost = "http://sakurazaka.s324.xrea.com/products-app/bbs.php";
     const helloTypeScript = "https://hello-typescript-8a1d9.web.app";
